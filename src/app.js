@@ -5,8 +5,8 @@ const cors = require('cors');
 
 
 //middlewares
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
 app.use('', require('./routes/appRoutes'));
 
 
