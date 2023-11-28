@@ -28,6 +28,11 @@ const vehicleSchema = new mongoose.Schema({
         required: false,
         default: Date.now()
     },
+    active: {
+        type: Boolean,
+        required: false,
+        default: true
+    },
 });
 
 const Vehicle = mongoose.model('Vehicle', vehicleSchema, 'vehicles');
